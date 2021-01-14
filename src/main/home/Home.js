@@ -12,7 +12,7 @@ export default function Home() {
             <RbcJumbotron home={home} />
             <Welcome home={home} />
             <SundayGatherings home={home} />
-            <LeafletMap home={home} />
+            
             <WhatToExpect home={home} />
         </>
     );

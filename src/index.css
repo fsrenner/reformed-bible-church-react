@@ -126,9 +126,8 @@ header .container-fluid {
   color: #333;
 }
 
-
 #mapid {
-  height: 400px;
+  min-height: 100%;
   width: 100%;
 }
 
