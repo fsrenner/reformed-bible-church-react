@@ -1,0 +1,11 @@
+{
+  "short_name": "Reformed Bible Church",
+  "name": "Reformed Bible Church",
+  "icons": [
+    
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
