@@ -9,21 +9,38 @@ import LeadershipData from './LeadershipData';
 import HomeData from './HomeData';
 import BeliefsData from './BeliefsData';
 
+
 export default function Dashboard({ user, logout }) {
 
     const [key, setKey] = useState('home');
 
+    console.log(key);
+
     return (
-    <Nav fill variant="tabs" defaultActiveKey="/home">
-        <Nav.Item>
-            <Nav.Link>Home</Nav.Link>
-        </Nav.Item> 
-        <Nav.Item>
-            <Nav.Link eventKey="link-1">Beliefs</Nav.Link>
-        </Nav.Item> 
-        <Nav.Item>
-            <Nav.Link eventKey="link-1">Leadership</Nav.Link>
-        </Nav.Item> 
-    </Nav>
+        <Container>
+            <Row>
+                <Nav fill variant="tabs" activeKey="home" className="dashboard" onSelect={selectedKey => setKey(selectedKey)}>
+                    <Nav.Item>
+                        <Nav.Link eventKey="home">Home</Nav.Link>
+                    </Nav.Item> 
+                    <Nav.Item>
+                        <Nav.Link eventKey="beliefs">Beliefs</Nav.Link>
+                    </Nav.Item> 
+                    <Nav.Item>
+                        <Nav.Link eventKey="leadership">Leadership</Nav.Link>
+                    </Nav.Item> 
+                </Nav>
+            </Row>
+            <Row>
+                {
+                    (key === 'home')
+                        ? <HomeData />
+                        : (key === 'beliefs')
+                            ? <BeliefsData />
+                            : <LeadershipData />
+                }
+            </Row>
+        </Container>
+    
     )
 }

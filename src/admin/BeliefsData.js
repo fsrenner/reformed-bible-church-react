@@ -33,9 +33,9 @@ export default function BeliefsData() {
                                     </Form.Group>
                                         {beliefsData.solas.content.map((paragraph, key) => {
                                             return (
-                                                <Form.Group>
+                                                <Form.Group  key={key}>
                                                     <Form.Label className="text-center">{paragraph.solaTitle}</Form.Label>
-                                                    <Form.Control key={key} as="textarea" rows={2} value={paragraph.solaContent} />
+                                                    <Form.Control as="textarea" rows={2} value={paragraph.solaContent} />
                                                 </Form.Group>
                                             );
                                         })}

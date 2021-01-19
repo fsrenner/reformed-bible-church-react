@@ -9,7 +9,7 @@ const admins = [
     }, 
 ];
 
-export const login = (obj) => {
+export const userLogin = (obj) => {
     let admin = admins.filter(admin => admin.username === obj.username);
     if (admin.length === 0) {
         return `Username: ${obj.username} does not exist in our system`;

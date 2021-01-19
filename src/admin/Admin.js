@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { login } from './adminUsers';
+import { userLogin } from './adminUsers';
 import Row from 'react-bootstrap/Row';
 import Login from './Login';
 import Dashboard from './Dashboard';
@@ -11,7 +11,7 @@ export default function Admin() {
     const history = useHistory();
     
     const login = (username, password) => {
-        const user = login({
+        const user = userLogin({
             username,
             password
         });

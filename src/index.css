@@ -26,6 +26,10 @@ header .container-fluid {
   height: 50px;
 }
 
+.dashboard {
+  padding-top: 40px;
+}
+
 .rbc .jumbotron {
   background: url('./resources/reformed.jpg') no-repeat center center fixed; 
   background-size: cover;
@@ -82,7 +86,17 @@ header .container-fluid {
 }
 
 .login .row {
-  margin-top: 80px;
+  padding-top: 40px;
+  min-height: 92vh;
+}
+
+.unauthorized .row {
+  padding-top: 90px;
+  min-height: 92vh;
+}
+
+.unauthorized-button {
+  margin-right: 5px;
 }
 
 .welcome .row:last-child,
