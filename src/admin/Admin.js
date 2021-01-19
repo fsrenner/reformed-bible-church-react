@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import { login } from './adminUsers';
 import Row from 'react-bootstrap/Row';
 import Login from './Login';
 import Dashboard from './Dashboard';
@@ -10,6 +11,13 @@ export default function Admin() {
     const history = useHistory();
     
     const login = (username, password) => {
+        const user = login({
+            username,
+            password
+        });
+        if (typeof user === 'string') {
+            history.push('/unauthorized');
+        }
         setUser({
             username,
             password

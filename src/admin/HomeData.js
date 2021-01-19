@@ -47,6 +47,10 @@ export default function HomeData() {
                                             <Form.Control type="text" value={homeData.locationCity} required />
                                         </Form.Group>
                                     </Form.Row>
+                                    <Form.Group controlId="googleMapUrl">
+                                        <Form.Label>Google Map Url</Form.Label>
+                                        <Form.Control type="text" value={homeData.googleMapUrl} required />
+                                    </Form.Group>
                                     <Form.Group controlId="message">
                                         <Form.Label>What to Expect</Form.Label>
                                         {homeData.expectations.map((expectation, key) => <Form.Control key={key} as="textarea" rows={2} value={expectation} />)}

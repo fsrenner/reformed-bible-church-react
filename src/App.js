@@ -9,6 +9,7 @@ import Home from './main/home/Home';
 import Give from './main/give/Give';
 import Admin from './admin/Admin';
 import Layout from './Layout';
+import Unauthorized from './admin/Unauthorized'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route exact path="/beliefs" component={Beliefs} />
             <Route exact path="/give" component={Give} />
             <Route exact path="/admin" component={Admin} />
+            <Route exact path="/unauthorized" component={Unauthorized} />
           </Switch>
         </main>
       </Layout>
