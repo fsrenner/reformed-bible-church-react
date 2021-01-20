@@ -5,6 +5,7 @@ export const home = {
     worshipTime: '10:45 am',
     locationStreet: '280 Old Still Rd',
     locationCity: 'Kimberling City, MO 65686',
+    googleMapUrl: 'https://goo.gl/maps/TWWNN8Qij1n7BYWc9',
     expectations: [
         'Worship that is God-focused and Christ-honoring',
         'The Word of God faithfully preached in an expositional way',

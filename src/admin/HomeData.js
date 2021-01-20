@@ -17,43 +17,45 @@ export default function HomeData() {
                     <Card bg="light" border="info">
                     <Card.Header className="text-center">Home Page Data</Card.Header>
                         <Card.Body>
-                            <Card.Text>
-                                <Form method="post">
-                                    <Form.Group controlId="message">
-                                        <Form.Label>Jumbotron Message</Form.Label>
-                                        <Form.Control as="textarea" rows={2} value={homeData.jumbotron} />
+                            <Form method="post">
+                                <Form.Group controlId="message">
+                                    <Form.Label>Jumbotron Message</Form.Label>
+                                    <Form.Control as="textarea" rows={2} value={homeData.jumbotron} onChange={(e) => console.log(e.target.value)} />
+                                </Form.Group>
+                                <Form.Group controlId="message">
+                                    <Form.Label>Welcome</Form.Label>
+                                    <Form.Control as="textarea" rows={5} value={homeData.welcome} onChange={(e) => console.log(e.target.value)} />
+                                </Form.Group>
+                                <Form.Row>
+                                    <Form.Group as={Col} controlId="bibleStudy">
+                                        <Form.Label>Bible Study</Form.Label>
+                                        <Form.Control type="text" value={homeData.bibleStudyTime} required onChange={(e) => console.log(e.target.value)} />
                                     </Form.Group>
-                                    <Form.Group controlId="message">
-                                        <Form.Label>Welcome</Form.Label>
-                                        <Form.Control as="textarea" rows={5} value={homeData.welcome} />
+                                    <Form.Group as={Col} controlId="worship">
+                                        <Form.Label>Worship</Form.Label>
+                                        <Form.Control type="text" value={homeData.worshipTime} required onChange={(e) => console.log(e.target.value)} />
                                     </Form.Group>
-                                    <Form.Row>
-                                        <Form.Group as={Col} controlId="bibleStudy">
-                                            <Form.Label>Bible Study</Form.Label>
-                                            <Form.Control type="text" value={homeData.bibleStudyTime} required />
-                                        </Form.Group>
-                                        <Form.Group as={Col} controlId="worship">
-                                            <Form.Label>Worship</Form.Label>
-                                            <Form.Control type="text" value={homeData.worshipTime} required />
-                                        </Form.Group>
-                                    </Form.Row>
-                                    <Form.Row>
-                                        <Form.Group as={Col} controlId="street">
-                                            <Form.Label>Street</Form.Label>
-                                            <Form.Control type="text" value={homeData.locationStreet} required />
-                                        </Form.Group>
-                                        <Form.Group as={Col} controlId="city">
-                                            <Form.Label>City</Form.Label>
-                                            <Form.Control type="text" value={homeData.locationCity} required />
-                                        </Form.Group>
-                                    </Form.Row>
-                                    <Form.Group controlId="message">
-                                        <Form.Label>What to Expect</Form.Label>
-                                        {homeData.expectations.map((expectation, key) => <Form.Control key={key} as="textarea" rows={2} value={expectation} />)}
+                                </Form.Row>
+                                <Form.Row>
+                                    <Form.Group as={Col} controlId="street">
+                                        <Form.Label>Street</Form.Label>
+                                        <Form.Control type="text" value={homeData.locationStreet} required onChange={(e) => console.log(e.target.value)} />
                                     </Form.Group>
-                                    <Button variant="primary" type="submit">Update</Button>
-                                </Form>
-                            </Card.Text>
+                                    <Form.Group as={Col} controlId="city">
+                                        <Form.Label>City</Form.Label>
+                                        <Form.Control type="text" value={homeData.locationCity} required onChange={(e) => console.log(e.target.value)} />
+                                    </Form.Group>
+                                </Form.Row>
+                                <Form.Group controlId="googleMapUrl">
+                                    <Form.Label>Google Map Url</Form.Label>
+                                    <Form.Control type="text" value={homeData.googleMapUrl} required onChange={(e) => console.log(e.target.value)} />
+                                </Form.Group>
+                                <Form.Group controlId="message">
+                                    <Form.Label>What to Expect</Form.Label>
+                                    {homeData.expectations.map((expectation, key) => <Form.Control key={key} as="textarea" rows={2} value={expectation}  onChange={(e) => console.log(e.target.value)} />)}
+                                </Form.Group>
+                                <Button variant="primary" type="submit">Update</Button>
+                            </Form>
                         </Card.Body>
                     </Card>
                 </Col>
