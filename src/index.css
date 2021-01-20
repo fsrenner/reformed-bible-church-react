@@ -215,6 +215,18 @@ footer .col-md-2 {
   margin-top: 22.5px;
 }
 
+footer #openContactModal {
+  text-decoration: none;
+  background: none;
+  color: #999;
+  border: none;
+  padding: 0;
+}
+
+footer #openContactModal:hover {
+  color: #999;
+}
+
 footer a {
   text-decoration: none;
   color: #999;

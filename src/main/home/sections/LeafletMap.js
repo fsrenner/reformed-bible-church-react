@@ -1,11 +1,17 @@
 import React, { useEffect } from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
+import icon from 'leaflet/dist/images/marker-icon.png';
 import { mapConfig } from '../../../util/config';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 export default function LeafletMap({ home }) {
+
+  const DefaultIcon = L.icon({
+    iconUrl: icon
+  });
+
+  L.Marker.prototype.options.icon = DefaultIcon;
 
     useEffect(() => {
         const light = L.tileLayer(mapConfig.url, {
@@ -31,15 +37,15 @@ export default function LeafletMap({ home }) {
         <Row id="mapid">
         <Col sm={1}></Col>
         <Col sm={4} id="serviceTimes">
-          <h3 class="text-center">Times and Location</h3>
+          <h3 className="text-center">Times and Location</h3>
           <br />
-          <p class="text-center lead" id="bibleStudy">Bible Study | {home.bibleStudyTime}</p>
-          <p class="text-center lead">Worship | {home.worshipTime}</p>
+          <p className="text-center lead" id="bibleStudy">Bible Study | {home.bibleStudyTime}</p>
+          <p className="text-center lead">Worship | {home.worshipTime}</p>
           <hr />
-          <p class="text-center street">{home.locationStreet}</p>
-          <p class="text-center">{home.locationCity}</p>
+          <p className="text-center street">{home.locationStreet}</p>
+          <p className="text-center">{home.locationCity}</p>
           <div id="getDirections">
-            <a href={home.googleMapUrl} target="_blank" rel="noreferrer" class="btn">Get Directions</a>
+            <a href={home.googleMapUrl} target="_blank" rel="noreferrer" className="btn">Get Directions</a>
           </div>
           
         </Col>

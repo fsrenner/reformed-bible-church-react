@@ -17,43 +17,41 @@ export default function LeadershipData() {
                     <Card bg="light" border="info">
                     <Card.Header className="text-center">Leadership Page Data</Card.Header>
                         <Card.Body>
-                            <Card.Text>
-                                <Form method="post">
-                                    <Form.Group controlId="government">
-                                        <Form.Label>Government</Form.Label>
-                                        <Form.Control as="textarea" rows={2} value={leadershipData.government} />
-                                    </Form.Group>
-                                    <Form.Group controlId="elder">
-                                        <Form.Label>Elder</Form.Label>
-                                        <Form.Control as="textarea" rows={8} value={leadershipData.elder} />
-                                    </Form.Group>
-                                    <Form.Group controlId="deacon">
-                                        <Form.Label>Deacon</Form.Label>
-                                        <Form.Control as="textarea" rows={5} value={leadershipData.deacon} />
-                                    </Form.Group>
-                                        {
-                                            leadershipData.leaders.map((leader, key) => {
-                                                return (
-                                                    <Form.Row>
-                                                        <Form.Group as={Col} controlId="title">
-                                                            <Form.Label>Bible Study</Form.Label>
-                                                            <Form.Control type="text" value={leader.title} required />
-                                                        </Form.Group>
-                                                        <Form.Group as={Col} controlId="name">
-                                                            <Form.Label>Worship</Form.Label>
-                                                            <Form.Control type="text" value={leader.name} required />
-                                                        </Form.Group>
-                                                        <Form.Group as={Col} controlId="image">
-                                                            <Form.Label>Worship</Form.Label>
-                                                            <Form.Control type="text" value={leader.image} required />
-                                                        </Form.Group>
-                                                    </Form.Row>
-                                                );
-                                            })
-                                        }
-                                    <Button variant="primary" type="submit">Update</Button>
-                                </Form>
-                            </Card.Text>
+                            <Form method="post">
+                                <Form.Group controlId="government">
+                                    <Form.Label>Government</Form.Label>
+                                    <Form.Control as="textarea" rows={2} value={leadershipData.government} onChange={(e) => console.log(e.target.value)} />
+                                </Form.Group>
+                                <Form.Group controlId="elder">
+                                    <Form.Label>Elder</Form.Label>
+                                    <Form.Control as="textarea" rows={8} value={leadershipData.elder} onChange={(e) => console.log(e.target.value)} />
+                                </Form.Group>
+                                <Form.Group controlId="deacon">
+                                    <Form.Label>Deacon</Form.Label>
+                                    <Form.Control as="textarea" rows={5} value={leadershipData.deacon} onChange={(e) => console.log(e.target.value)} />
+                                </Form.Group>
+                                    {
+                                        leadershipData.leaders.map((leader, key) => {
+                                            return (
+                                                <Form.Row>
+                                                    <Form.Group as={Col} controlId="title">
+                                                        <Form.Label>Bible Study</Form.Label>
+                                                        <Form.Control type="text" value={leader.title} required onChange={(e) => console.log(e.target.value)} />
+                                                    </Form.Group>
+                                                    <Form.Group as={Col} controlId="name">
+                                                        <Form.Label>Worship</Form.Label>
+                                                        <Form.Control type="text" value={leader.name} required onChange={(e) => console.log(e.target.value)} />
+                                                    </Form.Group>
+                                                    <Form.Group as={Col} controlId="image">
+                                                        <Form.Label>Worship</Form.Label>
+                                                        <Form.Control type="text" value={leader.image} required onChange={(e) => console.log(e.target.value)} />
+                                                    </Form.Group>
+                                                </Form.Row>
+                                            );
+                                        })
+                                    }
+                                <Button variant="primary" type="submit">Update</Button>
+                            </Form>
                         </Card.Body>
                     </Card>
                 </Col>

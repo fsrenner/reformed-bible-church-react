@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
-import Button from 'react-bootstrap/Button';
-import Tabs from 'react-bootstrap/Tabs';
-import Tab from 'react-bootstrap/Tab';
 import Nav from 'react-bootstrap/Nav';
 import LeadershipData from './LeadershipData';
 import HomeData from './HomeData';
@@ -19,7 +16,7 @@ export default function Dashboard({ user, logout }) {
     return (
         <Container>
             <Row>
-                <Nav fill variant="tabs" activeKey="home" className="dashboard" onSelect={selectedKey => setKey(selectedKey)}>
+                <Nav activeKey="home" className="dashboard" onSelect={selectedKey => setKey(selectedKey)}>
                     <Nav.Item>
                         <Nav.Link eventKey="home">Home</Nav.Link>
                     </Nav.Item> 
@@ -30,8 +27,6 @@ export default function Dashboard({ user, logout }) {
                         <Nav.Link eventKey="leadership">Leadership</Nav.Link>
                     </Nav.Item> 
                 </Nav>
-            </Row>
-            <Row>
                 {
                     (key === 'home')
                         ? <HomeData />
@@ -41,6 +36,5 @@ export default function Dashboard({ user, logout }) {
                 }
             </Row>
         </Container>
-    
-    )
+    );
 }

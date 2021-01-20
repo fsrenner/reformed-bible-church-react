@@ -12,7 +12,7 @@ export default function Footer ({ onShow }) {
                 <Col md={2}>
                     <div id="contact">
                         <p>
-                            <a href="javascript:void(0)" id="openContactModal" data-toggle="modal" data-target="#contactModal" onClick={onShow} >Contact Us</a>
+                            <button id="openContactModal" data-toggle="modal" data-target="#contactModal" onClick={onShow}>Contact Us</button>
                         </p>
                     </div>
                 </Col>
