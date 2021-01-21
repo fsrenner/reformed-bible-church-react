@@ -5,10 +5,10 @@ import Col from 'react-bootstrap/Col';
 
 export default function Government({ leadership }) {
     return (
-        <section class="container-fullwidth government">
+        <section className="container-fullwidth government">
             <Row>
                 <Col>
-                    <h2 class="text-center">Government</h2>
+                    <h2 className="text-center">Government</h2>
                 </Col>
             </Row>
             <Container>
@@ -21,7 +21,7 @@ export default function Government({ leadership }) {
             <Container>
                 <Row>
                     <Col>
-                        <h3 class="elder">Elder</h3>
+                        <h3 className="elder">Elder</h3>
                         <p>{leadership.elder}</p>
                     </Col>
                 </Row>
@@ -29,7 +29,7 @@ export default function Government({ leadership }) {
             <Container>
                 <Row>
                     <Col>
-                        <h3 class="deacon">Deacon</h3>
+                        <h3 className="deacon">Deacon</h3>
                         <p>{leadership.deacon}</p>
                     </Col>
                 </Row>

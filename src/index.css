@@ -31,7 +31,7 @@ header .container-fluid {
 }
 
 .rbc .jumbotron {
-  background: url('./resources/reformed.jpg') no-repeat center center fixed; 
+  background: url('./resources/reformed.jpg') no-repeat center center; 
   background-size: cover;
   display: flex;
   height: 100%;
@@ -101,7 +101,8 @@ header .container-fluid {
 
 .welcome .row:last-child,
 .sunday-gatherings .row:last-child,
-.what-to-expect .row:last-child {
+.what-to-expect .row:last-child,
+.give .row:last-child {
   padding-bottom: 50px;
 }
 
@@ -113,6 +114,12 @@ header .container-fluid {
 .elder,
 .deacon {
   padding-bottom: 10px;
+}
+
+.give .row {
+  padding-top: 80px;
+  display: flex;
+  min-height: 90vh;
 }
 
 .solas {

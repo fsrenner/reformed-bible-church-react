@@ -3,9 +3,9 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 
 export default function LeadershipJumbotron() {
     return (
-        <section class="container-fullwidth leadership">
+        <section className="container-fullwidth leadership">
             <Jumbotron>
-                <div class="jumbotron-content">
+                <div className="jumbotron-content">
                     <h1>Leadership</h1>
                 </div>
             </Jumbotron>
