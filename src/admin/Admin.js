@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import { userLogin } from './adminUsers';
 import Row from 'react-bootstrap/Row';
@@ -9,6 +9,10 @@ export default function Admin() {
     const [loggedIn, setLoggedIn] = useState(false);
     const [user, setUser] = useState({});
     const history = useHistory();
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
     
     const login = (username, password) => {
         const user = userLogin({
