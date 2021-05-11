@@ -6,8 +6,6 @@ import { NavLink } from 'react-router-dom';
 export default function Navigation () {
 
     const [expanded, setExpanded] = useState(false);
-
-    console.log(expanded);
     return (
         <Navbar bg="light" expanded={expanded} expand="md" fixed="top">
             <Navbar.Brand href="/" id="rbcLogo">

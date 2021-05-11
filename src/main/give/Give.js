@@ -10,13 +10,13 @@ export default function Give() {
     }, []);
 
     return(
-        <section className="container-fullwidth give">
+        <Container fluid className="give">
             <Row>
                 <Col>
                     <h1>This is the Give component</h1>
                     <p>This component isn't ready yet</p>
                 </Col>
             </Row>
-        </section>
+        </Container>
     );
 }

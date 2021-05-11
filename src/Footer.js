@@ -1,13 +1,12 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { NavLink } from 'react-router-dom';
 
 export default function Footer ({ onShow }) {
     return (
         <footer className="container-fluid">
             <Row>
-                <Col md={1}></Col>
+                <Col md={2}></Col>
                 <Col md={2}>&#169; 2020 Reformed Bible Church</Col>
                 <Col md={2}>
                     <div id="contact">
@@ -30,8 +29,7 @@ export default function Footer ({ onShow }) {
                         </svg>
                     </a>
                 </Col>
-                <Col md={2}><NavLink to="/admin" className="nav-link" activeClassName="active">Admin</NavLink></Col>
-                <Col md={1}></Col>
+                <Col md={2}></Col>
             </Row>
         </footer>
     );
