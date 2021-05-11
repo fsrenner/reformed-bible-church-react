@@ -7,9 +7,14 @@ import Beliefs from './main/beliefs/Beliefs';
 import Leadership from './main/leadership/Leadership';
 import Home from './main/home/Home';
 import Give from './main/give/Give';
+import Sermons from './main/sermons/Sermons';
 import Admin from './admin/Admin';
 import Layout from './Layout';
 import Unauthorized from './admin/Unauthorized'
+import Dashboard from './admin/Dashboard';
+import AddSermon from './admin/AddSermon';
+import EditSermon from './admin/EditSermon';
+import DeleteSermon from './admin/DeleteSermon'
 
 function App() {
   return (
@@ -20,9 +25,14 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route exact path="/leadership" component={Leadership} />
             <Route exact path="/beliefs" component={Beliefs} />
+            <Route exact path="/sermons" component={Sermons} />
             <Route exact path="/give" component={Give} />
             <Route exact path="/admin" component={Admin} />
-            <Route exact path="/unauthorized" component={Unauthorized} />
+            <Route exact path="/admin/unauthorized" component={Unauthorized} />
+            <Route exact path="/admin/dashboard" component={Dashboard} />
+            <Route exact path="/admin/dashboard/sermon/add" component={AddSermon} />
+            <Route exact path="/admin/dashboard/sermon/edit" component={EditSermon} />
+            <Route exact path="/admin/dashboard/sermon/delete" component={DeleteSermon} />
           </Switch>
         </main>
       </Layout>

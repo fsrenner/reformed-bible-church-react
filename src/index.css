@@ -12,10 +12,12 @@
   height: 85vh;
 }
 
-.wwb {
+.wwb,
+.sermons {
   height: 75vh;
   background-color: #321a2a;
 }
+  
 
 header .container-fluid {
   padding-left: 0;
@@ -52,6 +54,14 @@ header .container-fluid {
   background-size: cover;
   display: flex;
   height: 400px;
+  overflow: hidden;
+}
+
+.sermons .jumbotron {
+  background: url('./resources/faith.jpg') no-repeat center center; 
+  background-size: 95%;
+  display: flex;
+  height: 100%;
   overflow: hidden;
 }
 

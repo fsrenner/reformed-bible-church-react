@@ -3,7 +3,6 @@ import { useHistory } from 'react-router-dom';
 import { userLogin } from './adminUsers';
 import Row from 'react-bootstrap/Row';
 import Login from './Login';
-import Dashboard from './Dashboard';
 
 export default function Admin() {
     const [loggedIn, setLoggedIn] = useState(false);
@@ -14,31 +13,53 @@ export default function Admin() {
         window.scrollTo(0, 0)
     }, []);
     
-    const login = (username, password) => {
-        const user = userLogin({
-            username,
-            password
-        });
-        if (typeof user === 'string') {
-            history.push('/unauthorized');
+    const login = async (username, password) => {
+        try {
+            const user = await userLogin({
+                username,
+                password
+            });
+            if (typeof user === 'string') {
+                history.push({
+                    pathname: '/admin/unauthorized',
+                    state: {
+                        message: user
+                    }
+                });
+            }
+            setUser({
+                username,
+                password
+            });
+            setLoggedIn(true);
+            history.push({
+                pathname: '/admin/dashboard',
+                state: {
+                    loggedIn,
+                    user
+                }
+            });
+        } catch (err) {
+            const error = `There was an error logging in`
+            console.error(error, err)
+            setLoggedIn(false);
+            history.push({
+                pathname: '/admin/unauthorized', 
+                state: {
+                    error,
+                    err: `${err}`
+                }
+            });
         }
-        setUser({
-            username,
-            password
-        });
-        setLoggedIn(true);
-    };
-
-    const logout = () => {
-        setLoggedIn(false);
-        history.push('/');
+        
     };
 
     return (
         <section className="container-fluid login">
             <Row>
-                { (!loggedIn) ? <Login login={login} /> : <Dashboard user={user} logout={logout} /> }
+                <Login login={login} />
             </Row>
         </section>
     );
+    
 }

@@ -1,40 +1,29 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useHistory, useLocation } from 'react-router-dom';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
-import Nav from 'react-bootstrap/Nav';
-import LeadershipData from './LeadershipData';
-import HomeData from './HomeData';
-import BeliefsData from './BeliefsData';
+import SermonData from './SermonData';
 
+export default function Dashboard() {
+    const history = useHistory();
+    const location = useLocation();
 
-export default function Dashboard({ user, logout }) {
+    console.log(location.state);
+    const loggedIn = location.state.loggedIn;
+    const user = location.state.user;
 
-    const [key, setKey] = useState('home');
-
-    console.log(key);
-
-    return (
-        <Container>
-            <Row>
-                <Nav activeKey="home" className="dashboard" onSelect={selectedKey => setKey(selectedKey)}>
-                    <Nav.Item>
-                        <Nav.Link eventKey="home">Home</Nav.Link>
-                    </Nav.Item> 
-                    <Nav.Item>
-                        <Nav.Link eventKey="beliefs">Beliefs</Nav.Link>
-                    </Nav.Item> 
-                    <Nav.Item>
-                        <Nav.Link eventKey="leadership">Leadership</Nav.Link>
-                    </Nav.Item> 
-                </Nav>
-                {
-                    (key === 'home')
-                        ? <HomeData />
-                        : (key === 'beliefs')
-                            ? <BeliefsData />
-                            : <LeadershipData />
-                }
-            </Row>
-        </Container>
-    );
+    // if (!loggedIn) {
+    //     history.push('/admin/unauthorized');
+    // } else {
+        return (
+            <section className="container-fluid login">
+                <Row>
+                    <SermonData loggedIn={loggedIn}/>
+                    <p>Logged In: {loggedIn}</p>
+                    <p>User: {user.username}</p>
+                </Row>
+            </section>
+        );
+    // }
+    
 }

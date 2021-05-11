@@ -25,6 +25,7 @@ export default function Navigation () {
                 <NavLink to="/" className="nav-link" activeClassName="active" exact={true} onClick={() => setExpanded(false)}>Home <span className="sr-only">(current)</span></NavLink>
                 <NavLink to="/beliefs" className="nav-link" activeClassName="active" onClick={() => setExpanded(false)}>Beliefs</NavLink>
                 <NavLink to="/leadership" className="nav-link" activeClassName="active" onClick={() => setExpanded(false)}>Leadership</NavLink>
+                <NavLink to="/sermons" className="nav-link" activeClassName="active" onClick={() => setExpanded(false)}>Sermons</NavLink>
                 <NavLink to="/give" className="nav-link disabled" activeClassName="active" onClick={() => setExpanded(false)}>Give (Coming soon)</NavLink>
             </Nav>
             </Navbar.Collapse>

@@ -11,8 +11,9 @@ export const home = {
         'The Word of God faithfully preached in an expositional way',
         'Participatory worship with Scripture readings, responsive confessional readings, God focused music, and prayers',
         'Equipping of the saints for the work of the ministry',
-        'Regular communion with bread and wine and grape juice',
-        `Families worshipping together (we don't separate the children)`
+        'Celebrating the Lord\'s Supper on a regular basis',
+        `Families worshipping together (we don't separate the children)`,
+        'A modest gathering: we are a newly formed church'
     ]
 };
 
@@ -112,3 +113,14 @@ export const leadership = {
         },
     ]
 };
+
+export const sermons = [
+    {
+        title: 'Raising the Widow\'s Son',
+        imageSource: './resources/luke.png',
+        imageAlt: 'Luke Graphic',
+        scripture: 'Luke 7:18-10',
+        date: 'Sunday, May 2, 2021',
+        sermonHref: 'https://youtube.com'
+    }
+]
