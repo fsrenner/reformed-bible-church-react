@@ -1,10 +1,18 @@
 window.sermons = [
   {
-      title: 'Raising the Widow\'s Son',
-      imageSource: './resources/luke.png',
-      imageAlt: 'Luke Graphic',
-      scripture: 'Luke 7:18-10',
-      date: 'Sunday, May 2, 2021',
-      sermonHref: 'https://youtube.com'
+      title: 'All Will Be Revealed',
+      scripture: 'Luke 8:16-21',
+      date: 'Sunday, May 30, 2021',
+      src: 'https://www.youtube-nocookie.com/embed/VPC-9qsB5R0',
+      speaker: 'Steve Renner',
+      series: 'The Gospel of Luke'
+  },
+  {
+      title: 'The Parable of the Soils',
+      scripture: 'Luke 8:1-15',
+      date: 'Sunday, May 23, 2021',
+      src: 'https://www.youtube-nocookie.com/embed/VPC-9qsB5R0',
+      speaker: 'Steve Renner',
+      series: 'The Gospel of Luke'
   }
 ];

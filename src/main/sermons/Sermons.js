@@ -14,15 +14,15 @@ export default function Sermons() {
     <>
     <SermonJumbotron />
     {
-      sermons.map((sermon) => {
+      sermons.map((sermon, key) => {
         return <Sermon 
-          key={sermon.id}
+          key={key}
           title={sermon.title}
-          imageSrc={sermon.imageSource}
-          imageAlt={sermon.imageAlt}
           scripture={sermon.scripture}
           date={sermon.date}
-          sermonHref={sermon.sermonHref}
+          src={sermon.src}
+          speaker={sermon.speaker}
+          series={sermon.series}
         />
       })
     }
