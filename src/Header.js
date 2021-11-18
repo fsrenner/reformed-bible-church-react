@@ -1,10 +1,10 @@
 import React from 'react';
 import Navigation from './Navigation';
 
-export default function Header() {
+export default function Header({ onShow }) {
     return (
         <header>
-            <Navigation />
+            <Navigation onShow={onShow} />
         </header>
     );
 }

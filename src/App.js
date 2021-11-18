@@ -6,9 +6,11 @@ import './index.css';
 import Beliefs from './main/beliefs/Beliefs';
 import Leadership from './main/leadership/Leadership';
 import Home from './main/home/Home';
-import Give from './main/give/Give';
 import Sermons from './main/sermons/Sermons';
+// import PaginationTest from './PaginationTest';
+import Admin from './admin/Admin';
 import Layout from './Layout';
+import PersonForm from './admin/people/PersonForm';
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
             <Route exact path="/leadership" component={Leadership} />
             <Route exact path="/beliefs" component={Beliefs} />
             <Route exact path="/sermons" component={Sermons} />
-            <Route exact path="/give" component={Give} />
+            {/* <Route exact path="/pagination" component={PaginationTest} /> */}
+            <Route exact path="/admin" component={Admin} />
+            <Route path="/person/:id?"><PersonForm /></Route>
           </Switch>
         </main>
       </Layout>

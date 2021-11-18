@@ -14,14 +14,14 @@ export default function ChurchLeaders({ leadership }) {
             {
                 leadership.leaders.map((leader, key) => {
                     return (
-                        <Container key={key}>
+                        <Container className="leadership-container" key={key}>
                             <Row>
                                 <Col sm={6}>
                                     <h3 className="elder">{leader.title}</h3>
                                     <h4>{leader.name}</h4>
                                 </Col>
                                 <Col sm={6}>
-                                    <img src={leader.image} alt={leader.name} />
+                                    <img src={leader.image} alt={leader.name} className="leadership-image"/>
                                 </Col>
                             </Row>
                         </Container>

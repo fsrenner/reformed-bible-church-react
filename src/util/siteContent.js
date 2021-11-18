@@ -1,18 +1,20 @@
 export const home = {
     jumbotron: 'We exist to bring glory to God through the Lord Jesus Christ by the power of the Holy Spirit',
     welcome: `Thank you for checking out Reformed Bible Church! We are a gathering of believers who live in the Branson-Table Rock Lake area who are committed to glorifying God, and exalting our Lord and Savior, Jesus Christ, according to the protestant, reformed tradition of the Christian faith. We are glad that you stopped by and hope you see what Reformed Bible Church is all about.`,
-    bibleStudyTime: '9:45 am',
+    bibleStudyTime: '9:30 am',
     worshipTime: '10:45 am',
-    locationStreet: '280 Old Still Rd',
-    locationCity: 'Kimberling City, MO 65686',
-    googleMapUrl: 'https://goo.gl/maps/TWWNN8Qij1n7BYWc9',
+    locationName: 'Best Western Branson Inn and Conference Center',
+    locationStreet: '8514 State Hwy 76',
+    locationCity: 'Branson West, MO 65737',
+    // googleMapUrl: 'https://goo.gl/maps/TWWNN8Qij1n7BYWc9', // Bill and Amy's house
+    googleMapUrl: 'https://goo.gl/maps/eKjJMcTGTec2yNov7', // Best Western
     expectations: [
         'Worship that is God-focused and Christ-honoring',
         'The Word of God faithfully preached in an expositional way',
         'Participatory worship with Scripture readings, responsive confessional readings, God focused music, and prayers',
         'Equipping of the saints for the work of the ministry',
         'Celebrating the Lord\'s Supper on a regular basis',
-        `Families worshipping together (we don't separate the children)`,
+        `Families worshipping together (we don't separate the children during Bible Study or Worship)`,
         'A modest gathering: we are a newly formed church'
     ]
 };
@@ -99,7 +101,7 @@ export const leadership = {
         {
             title: 'Elder, Lead Pastor',
             name: 'Steve Renner',
-            image: './resources/blank-person.png'
+            image: './resources/steve_renner.jpg'
         },
         {
             title: 'Elder, Teaching Pastor',
@@ -109,6 +111,11 @@ export const leadership = {
         {
             title: 'Deacon, Finances',
             name: 'Chris Baker',
+            image: './resources/blank-person.png'
+        },
+        {
+            title: 'Deacon, Property',
+            name: 'Steve Dunlap',
             image: './resources/blank-person.png'
         },
     ]

@@ -11,7 +11,7 @@ export default function Layout({ children }) {
 
     return (
         <div>
-            <Header />
+            <Header onShow={onShow} />
             {children}
             <Footer onShow={onShow} />
             <ContactModal show={show} onHide={onHide} />

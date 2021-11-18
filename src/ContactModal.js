@@ -3,7 +3,10 @@ import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
-import { contactFormUrl } from './util/config';
+// import { contactFormUrl } from './util/config';
+const config = window.config;
+
+const APPLICATION_JSON = 'application/json';
 
 export default function ContactModal({ show, onHide }) {
     const [validated, setValidated] = useState();
@@ -33,25 +36,28 @@ export default function ContactModal({ show, onHide }) {
                 message
             };
             console.log(body);
-            fetch(contactFormUrl, {
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                },
+            fetch(config.contactFormUrl, {
                 method: 'post',
                 body: JSON.stringify(body)
             })
-            .then(response => response.json())
+            .then(response => {
+                const contentType = response.headers.get('content-type');
+                if (contentType.includes(APPLICATION_JSON)) {
+                    return response.json();
+                } else {
+                    return response.text();
+                }
+            })
             .then(data => {
                 setFirstName('');
                 setLastName('');
                 setEmail('');
                 setPhoneNumber('');
                 setMessage('');
-                
-                onHide();
+                console.log(data);
             })
             .catch(e => console.error(e));
+            onHide();
         }
     }
 
@@ -75,7 +81,7 @@ export default function ContactModal({ show, onHide }) {
                     <Form.Row>
                         <Form.Group as={Col} controlId="email">
                             <Form.Label>Email *</Form.Label>
-                            <Form.Control type="text" onChange={handleEmail} value={email} required />
+                            <Form.Control type="email" onChange={handleEmail} value={email} required />
                         </Form.Group>
                         <Form.Group as={Col} controlId="phoneNumber">
                             <Form.Label>Phone Number</Form.Label>
