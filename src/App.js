@@ -11,6 +11,7 @@ import Sermons from './main/sermons/Sermons';
 import Admin from './admin/Admin';
 import Layout from './Layout';
 import PersonForm from './admin/people/PersonForm';
+import HouseholdForm from './admin/households/HouseholdForm';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             {/* <Route exact path="/pagination" component={PaginationTest} /> */}
             <Route exact path="/admin" component={Admin} />
             <Route path="/person/:id?"><PersonForm /></Route>
+            <Route path="/household/:id?"><HouseholdForm /></Route>
           </Switch>
         </main>
       </Layout>

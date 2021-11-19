@@ -39,8 +39,7 @@ export default function LeafletMap({ home }) {
         <Row id="mapid">
         <Col sm={1}></Col>
         <Col sm={4} id="serviceTimes">
-          <h3 className="text-center">New Times and Location</h3>
-          <h4 className="text-center">Beginning Sunday, July 4, 2021</h4>
+          <h3 className="text-center">Times and Location</h3>
           <br />
           <p className="text-center lead" id="bibleStudy">Bible Study | {home.bibleStudyTime}</p>
           <p className="text-center lead">Worship | {home.worshipTime}</p>

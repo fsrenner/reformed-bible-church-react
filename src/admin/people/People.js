@@ -1,11 +1,9 @@
 
 import React, { useEffect, useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
 import { useHistory } from "react-router-dom";
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 import Person from './Person';
-import { apiUrl } from '../../util/config';
 import request from '../../services/api';
 
 export default function People() {
@@ -24,11 +22,9 @@ export default function People() {
     fetchPeople();
   }, []);
 
-  console.log(people);
-
   return(
     <div>
-      <h1>Reformed Bible Church People</h1>
+      <h1>People</h1>
       <Button variant="primary" onClick={() => history.push('/person')}>Add Person</Button>
       <Table striped bordered hover>
         <thead>

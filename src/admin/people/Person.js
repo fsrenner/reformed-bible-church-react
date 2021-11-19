@@ -1,9 +1,11 @@
 import React from 'react';
+import { useHistory } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 
 export default function Person({ personData }) {
 
-  const updatePerson = personId => alert(`Updating person ${personId}`);
+  const history = useHistory();
+  const updatePerson = personId => history.push(`/person/${personId}`);
 
   return (
     <tr id={`person-${personData.id}`}>

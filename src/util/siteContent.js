@@ -111,7 +111,7 @@ export const leadership = {
         {
             title: 'Deacon, Finances',
             name: 'Chris Baker',
-            image: './resources/blank-person.png'
+            image: './resources/chris_baker.jpeg'
         },
         {
             title: 'Deacon, Property',

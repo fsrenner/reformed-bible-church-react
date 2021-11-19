@@ -69,9 +69,6 @@ export default function PersonForm() {
   const onMarriedChange = () => setMarried(!married);
   const onParentChange = () => setParent(!parent);
 
-  console.log(address);
-  console.log(household);
-
   const onFormSubmit = e => {
     e.preventDefault();
     const body = {
