@@ -175,13 +175,13 @@ header .container-fluid {
   width: 100%;
 }
 
-#mapid #serviceTimes {
+.locationInformation #serviceTimes {
   z-index: 801;
   background-color: #f8f9fa;
   opacity: 0.75;
 }
 
-#mapid h3 {
+.locationInformation h3 {
   padding-top: 20px;
   font-weight: bold;
 }
@@ -192,17 +192,17 @@ header .container-fluid {
   padding-bottom: 20px;
 }
 
-#mapid .street {
+.locationInformation .street {
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-#mapid #serviceTimes #bibleStudy {
+.locationInformation #serviceTimes #bibleStudy {
   padding-bottom: 2px;
   margin-bottom: 0;
 }
 
-#mapid #serviceTimes div {
+.locationInformation #serviceTimes div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -210,11 +210,11 @@ header .container-fluid {
   align-items: center;
 }
 
-#mapid #serviceTimes #getDirections {
+.locationInformation #serviceTimes #getDirections {
   margin: 0 auto;
 }
 
-#mapid #serviceTimes a {
+.locationInformation #serviceTimes a {
   text-decoration: none;
   min-width: 150px;
   padding: 0.5em 1em 0.5em;

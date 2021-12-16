@@ -36,7 +36,7 @@ export default function LeafletMap({ home }) {
     }, []);
 
     return (
-        <Row id="mapid">
+        <Row id="mapid" className="locationInformation">
         <Col sm={1}></Col>
         <Col sm={4} id="serviceTimes">
           <h3 className="text-center">Times and Location</h3>

@@ -1,4 +1,6 @@
 import { combineReducers } from 'redux';
-import { peopleReducer } from './reducers/peopleReducer'
+import { auth } from './reducers/authReducer';
+import { states } from './reducers/statesReducer';
+import { modal } from './reducers/modalReducer';
 
-export default combineReducers({ peopleReducer });
+export default combineReducers({ auth, states, modal });

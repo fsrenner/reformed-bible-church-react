@@ -1,8 +1,18 @@
 export const home = {
     jumbotron: 'We exist to bring glory to God through the Lord Jesus Christ by the power of the Holy Spirit',
-    welcome: `Thank you for checking out Reformed Bible Church! We are a gathering of believers who live in the Branson-Table Rock Lake area who are committed to glorifying God, and exalting our Lord and Savior, Jesus Christ, according to the protestant, reformed tradition of the Christian faith. We are glad that you stopped by and hope you see what Reformed Bible Church is all about.`,
+    welcome: `Thank you for visiting Reformed Bible Church's website! We are a family integrated church in the Branson-Table Rock Lake area who are committed to glorifying God, and exalting our Lord and Savior, Jesus Christ, according to the protestant, reformed tradition of the Christian faith, and dedicated to expository preaching and growth in sanctification through the ordinary means of grace. We are glad that you stopped by and hope you see what Reformed Bible Church is all about.`,
     bibleStudyTime: '9:30 am',
     worshipTime: '10:45 am',
+    newLocationTitle: 'Beginning Sunday, January 2, 2022',
+    newLocationText: [
+        'Our current meeting location at the Best Western Inn in Notch is closing for the offseason at the end of December. ',
+        'We will begin meeting at Simply Baked by Chandler on Sunday, January 2, which is located in Kimberling City',
+    ],
+    newLocationMapUrl: 'https://goo.gl/maps/oGDKrXaQ21knr38F6',
+    newLocationImg: './resources/simply-baked-by-chandler.jpeg',
+    newLocationName: 'Simply Baked by Chandler',
+    newLocationStreet: '12056 MO-13',
+    newLocationCity: 'Kimberling City, MO 65686',
     locationName: 'Best Western Branson Inn and Conference Center',
     locationStreet: '8514 State Hwy 76',
     locationCity: 'Branson West, MO 65737',
@@ -10,11 +20,11 @@ export const home = {
     googleMapUrl: 'https://goo.gl/maps/eKjJMcTGTec2yNov7', // Best Western
     expectations: [
         'Worship that is God-focused and Christ-honoring',
-        'The Word of God faithfully preached in an expositional way',
+        'The Word of God faithfully preached through expositional and exegetical sermons',
         'Participatory worship with Scripture readings, responsive confessional readings, God focused music, and prayers',
-        'Equipping of the saints for the work of the ministry',
+        'Practice of the Ordinary Means of Grace for discipleship and for equipping of the saints for the work of the ministry',
         'Celebrating the Lord\'s Supper on a regular basis',
-        `Families worshipping together (we don't separate the children during Bible Study or Worship)`,
+        `Family integrated worship (we don't separate the children during Bible Study or Worship)`,
         'A modest gathering: we are a newly formed church'
     ]
 };

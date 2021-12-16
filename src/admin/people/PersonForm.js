@@ -22,6 +22,8 @@ export default function PersonForm() {
   const [married, setMarried] = useState(false);
   const [parent, setParent] = useState(false);
 
+  
+
   useEffect(() => {
     async function fetchPeopleFormResources() {
       let person;
@@ -57,7 +59,7 @@ export default function PersonForm() {
       }
     } 
     fetchPeopleFormResources();
-  }, []);
+  }, [id]);
 
   const onFirstnameInput = (e) => setFirstname(e.target.value);
   const onLastnameInput = (e) => setLastname(e.target.value);

@@ -8,7 +8,7 @@ export default function Houshold({ householdData }) {
   const updateHousehold = householdId => history.push(`/household/${householdId}`);
 
   return(
-    <tr id={`person-${householdData.id}`}>
+    <tr id={`household-${householdData.id}`}>
       <td>{ householdData.familyname }</td>
       <td>{ householdData.address }</td>
       <td><Button variant="secondary" onClick={() => updateHousehold(householdData.id)}>Update</Button></td>

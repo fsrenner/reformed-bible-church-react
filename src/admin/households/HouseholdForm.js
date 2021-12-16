@@ -32,7 +32,7 @@ export default function HouseholdForm() {
       }
     }
     fetchHouseholdFormResources();
-  }, []);
+  }, [id]);
 
   const onFamilynameInput = (e) => setFamilyname(e.target.value);
   const onAddressSelect = (e) => setAddress(e.target.value);
@@ -54,7 +54,7 @@ export default function HouseholdForm() {
         }
       }
     >
-      <h1>This is the Household form component</h1>
+      <h1>Household</h1>
       <Container>
         <Card>
           <Card.Body>

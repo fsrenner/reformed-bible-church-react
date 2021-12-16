@@ -12,11 +12,10 @@ export default function Navigation ({ onShow }) {
             <Navbar.Brand href="/" id="rbcLogo">
                 <img 
                     className="navbar-brand" 
-                    src="./resources/rbclogo.png"
+                    src="./resources/RBC-logo-new-1.png"
                     id="rbcLogo" 
                     alt=""
-                />{' '}
-                Reformed Bible Church
+                />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")} />
             <Navbar.Collapse id="responsive-navbar-nav">
@@ -28,7 +27,7 @@ export default function Navigation ({ onShow }) {
                 <Nav.Link id="openContactModal" data-toggle="modal" data-target="#contactModal" onClick={onShow}>Contact Us</Nav.Link>
                 <Nav.Link href={givingUrl} target="_blank">Give</Nav.Link>
                 {/* <NavLink to="/pagination" className="nav-link" activeClassName="active" onClick={() => setExpanded(false)}>Pagination</NavLink> */}
-                <NavLink to="/admin" className="nav-link" activeClassName="active" onClick={() => setExpanded(false)}>Admin</NavLink>
+                {/* <NavLink to="/login" className="nav-link" activeClassName="active" onClick={() => setExpanded(false)}>Admin</NavLink> */}
             </Nav>
             </Navbar.Collapse>
         </Navbar>

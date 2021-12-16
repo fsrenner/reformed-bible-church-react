@@ -3,6 +3,7 @@ import RbcJumbotron from './sections/RbcJumbotron';
 import Welcome from './sections/Welcome';
 import SundayGatherings from './sections/SundayGatherings';
 import WhatToExpect from './sections/WhatToExpect';
+import NewLocation from './sections/NewLocation';
 import { home } from '../../util/siteContent';
 
 export default function Home() {
@@ -13,8 +14,10 @@ export default function Home() {
 
     return(
         <>
+            
             <RbcJumbotron home={home} />
             <Welcome home={home} />
+            <NewLocation home={home} />
             <SundayGatherings home={home} />
             
             <WhatToExpect home={home} />
