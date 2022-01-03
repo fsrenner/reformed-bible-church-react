@@ -7,11 +7,11 @@ export default function NewLocation ({ home }) {
       <section className="container-fluid sunday-gatherings comp">
           <Row>
               <Col>
-                  <h2 className="text-center">New Temporary Location</h2>
+                  <h2 className="text-center">New Location</h2>
               </Col>
           </Row>
           <Row className="locationInformation">
-              <Col sm={6} id="serviceTimes">
+              <Col sm={12} id="serviceTimes">
                 <h3 className="text-center">{ home.newLocationTitle }</h3>
                 <br />
                 <div style={{ 
@@ -20,9 +20,10 @@ export default function NewLocation ({ home }) {
                     }}>
                   { home.newLocationText.map(text => <p>{ text }</p>)}
                   <hr />
-                  <div style={{ width: '50%' }}>
+                  <div>
                     {(home.newLocationName) ? <p className="text-center street">{home.newLocationName}</p> : null}
-                    <p className="text-center street">{home.newLocationStreet}</p>
+                    <p className="text-center">{home.newLocationStreet}</p>
+                    <br />
                     <p className="text-center">{home.newLocationCity}</p>
                   </div>
                   
@@ -32,9 +33,6 @@ export default function NewLocation ({ home }) {
                   <a href={home.newLocationMapUrl} target="_blank" rel="noreferrer" className="btn">Get Directions</a>
                 </div>
                 
-              </Col>
-              <Col sm={6} style={{ display: 'flex' }}>
-                <img style={{ justifyContent: 'center' }} alt="Simply Baked Pic" src={ home.newLocationImg }/>
               </Col>
           </Row>
       </section>

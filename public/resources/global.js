@@ -168,8 +168,8 @@ window.config = {
 };
 
 window.mapConfig = {
-center: (window.innerWidth > 580) ? [36.652032, -93.57193] : [36.6957695, -93.405762],
-kcLatAndLong: [36.677220, -93.339190],
+center: (window.innerWidth > 580) ? [36.652132, -93.57193] : [36.6958, -93.405762],
+kcLatAndLong: [36.63343335705917, -93.42289859182972],
 accessToken: 'sk.eyJ1IjoiZnN0ZXZlcmVubmVyIiwiYSI6ImNraDIyc2pocTAwbzcycXFyd3hhMHkwN3EifQ.v1hz9oxAyWEVITUNZIqOZg',
 attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
 url: 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}',

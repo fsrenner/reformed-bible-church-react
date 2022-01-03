@@ -8,7 +8,7 @@ export default function SundayGatherings({ home }) {
         <section className="container-fluid sunday-gatherings comp">
             <Row>
                 <Col>
-                    <h2 className="text-center">Sunday Gathering until Sunday, December 26</h2>
+                    <h2 className="text-center">Sunday Gathering until Sunday, January 30, 2022</h2>
                 </Col>
             </Row>
             <LeafletMap home={home}/>

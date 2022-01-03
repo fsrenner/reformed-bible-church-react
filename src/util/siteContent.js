@@ -3,21 +3,20 @@ export const home = {
     welcome: `Thank you for visiting Reformed Bible Church's website! We are a family integrated church in the Branson-Table Rock Lake area who are committed to glorifying God, and exalting our Lord and Savior, Jesus Christ, according to the protestant, reformed tradition of the Christian faith, and dedicated to expository preaching and growth in sanctification through the ordinary means of grace. We are glad that you stopped by and hope you see what Reformed Bible Church is all about.`,
     bibleStudyTime: '9:30 am',
     worshipTime: '10:45 am',
-    newLocationTitle: 'Beginning Sunday, January 2, 2022',
+    newLocationTitle: 'Beginning Sunday, February 6, 2022',
     newLocationText: [
-        'Our current meeting location at the Best Western Inn in Notch is closing for the offseason at the end of December. ',
-        'We will begin meeting at Simply Baked by Chandler on Sunday, January 2, which is located in Kimberling City',
+        'We are meeting temporarily at Simply Baked by Chandler in Kimberling City for the month of January.',
+        'Begining on Sunday, February 6 we will begin meeting at our new permanent location in a storefront in Branson West near El Lago.',
     ],
-    newLocationMapUrl: 'https://goo.gl/maps/oGDKrXaQ21knr38F6',
-    newLocationImg: './resources/simply-baked-by-chandler.jpeg',
-    newLocationName: 'Simply Baked by Chandler',
-    newLocationStreet: '12056 MO-13',
-    newLocationCity: 'Kimberling City, MO 65686',
-    locationName: 'Best Western Branson Inn and Conference Center',
-    locationStreet: '8514 State Hwy 76',
-    locationCity: 'Branson West, MO 65737',
+    newLocationMapUrl: 'https://goo.gl/maps/iMBvXiswwV3QQ5ZW8',
+    newLocationName: '',
+    newLocationStreet: '18942 - H, Business 13',
+    newLocationCity: ', Branson West, MO 65737',
+    locationName: 'Simply Baked by Chandler',
+    locationStreet: '12056 MO-13',
+    locationCity: 'Kimberling City, MO 65686',
     // googleMapUrl: 'https://goo.gl/maps/TWWNN8Qij1n7BYWc9', // Bill and Amy's house
-    googleMapUrl: 'https://goo.gl/maps/eKjJMcTGTec2yNov7', // Best Western
+    googleMapUrl: 'https://goo.gl/maps/oGDKrXaQ21knr38F6', // Simply Baked
     expectations: [
         'Worship that is God-focused and Christ-honoring',
         'The Word of God faithfully preached through expositional and exegetical sermons',
