@@ -4,8 +4,8 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 
 export default function WhoWeAre({ beliefs }) {
-    return (
-        <section className="container-fullwidth who-we-are">
+  return (
+      <section className="container-fullwidth who-we-are">
         <Row>
           <Col>
             <h2 className="text-center">Who We Are</h2>
@@ -16,7 +16,7 @@ export default function WhoWeAre({ beliefs }) {
             <Col>
               <h3 className="reformed">Reformed</h3>
               {beliefs.reformed.map((paragraph, key) => <p key={key}>{paragraph}</p>)}
-              <p className="lead"><p>{beliefs.solas.lead}</p></p>
+              <p className="lead">{beliefs.solas.lead}</p>
             </Col>
           </Row>
           <Row className="solas">
@@ -24,7 +24,7 @@ export default function WhoWeAre({ beliefs }) {
               <img src="./resources/solas-icons.png" alt="Five Solas Icon" />
             </Col>
             <Col sm={6}>
-              {beliefs.solas.content.map((sola, key) => <p key={key}><strong>{sola.solaTitle}</strong>{sola.solaContent}</p>)}
+              {beliefs.solas.content.map((sola, key) => <p key={key}><strong className='sola'>{sola.solaTitle}</strong>{sola.solaContent}</p>)}
             </Col>
             
           </Row>
@@ -44,7 +44,7 @@ export default function WhoWeAre({ beliefs }) {
               {beliefs.covenantal.map((belief, key) => {
                 let paragraph;
                 if (key === 1) {
-                  paragraph = <div class="blockquote"><blockquote cite="https://opc.org/wcf.html#Chapter_07"><p key={key}><em>{belief}</em></p></blockquote></div>;
+                  paragraph = <div className="blockquote"><blockquote cite="https://opc.org/wcf.html#Chapter_07"><p key={key}><em>{belief}</em></p></blockquote></div>;
                 } else {
                   paragraph = <p key={key}>{belief}</p>;
                 }
@@ -70,5 +70,5 @@ export default function WhoWeAre({ beliefs }) {
           </Row>
         </Container>
       </section>
-    );
+  );
 }

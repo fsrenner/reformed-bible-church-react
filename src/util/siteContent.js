@@ -2,28 +2,20 @@ export const home = {
     jumbotron: 'We exist to bring glory to God through the Lord Jesus Christ by the power of the Holy Spirit',
     welcome: `Thank you for visiting Reformed Bible Church's website! We are a family integrated church in the Branson-Table Rock Lake area who are committed to glorifying God, and exalting our Lord and Savior, Jesus Christ, according to the protestant, reformed tradition of the Christian faith, and dedicated to expository preaching and growth in sanctification through the ordinary means of grace. We are glad that you stopped by and hope you see what Reformed Bible Church is all about.`,
     bibleStudyTime: '9:30 am',
-    worshipTime: '10:45 am',
-    // newLocationTitle: 'Beginning Sunday, February 6, 2022',
-    // newLocationText: [
-    //     'We are meeting temporarily at Simply Baked by Chandler in Kimberling City for the month of January.',
-    //     'Begining on Sunday, February 6 we will begin meeting at our new permanent location in a storefront in Branson West near El Lago.',
-    // ],
-    // newLocationMapUrl: 'https://goo.gl/maps/iMBvXiswwV3QQ5ZW8',
-    // newLocationName: '',
-    // newLocationStreet: '18942-H, Business 13',
-    // newLocationCity: ', Branson West, MO 65737',
+    morningWorshipTime: '10:45 am',
+    eveningWorshipTime: '6:30 pm',
+    tuesdayDinnerTime: '6:00 pm',
+    tuesdayBibleStudyTime: '6:30 pm',
     locationName: 'Reformed Bible Church',
     locationStreet: '18942-H, Business 13',
     locationCity: 'Branson West, MO 65737',
-    // googleMapUrl: 'https://goo.gl/maps/TWWNN8Qij1n7BYWc9', // Bill and Amy's house
-    // googleMapUrl: 'https://goo.gl/maps/oGDKrXaQ21knr38F6', // Simply Baked
     googleMapUrl: 'https://goo.gl/maps/PKav5Axe6WWsfu6U7', // El Lago Location
     expectations: [
         'Worship that is God-focused and Christ-honoring',
         'The Word of God faithfully preached through expositional and exegetical sermons',
-        'Participatory worship with Scripture readings, responsive confessional readings, God focused music, and prayers',
+        'Participatory liturgical worship with Scripture readings, responsive confessional readings, God focused music, and prayers',
         'Practice of the Ordinary Means of Grace for discipleship and for equipping of the saints for the work of the ministry',
-        'Celebrating the Lord\'s Supper on a regular basis',
+        'Celebrating the Lord\'s Supper every Lord\'s Day',
         `Family integrated worship (we don't separate the children during Bible Study or Worship)`,
         'A modest gathering: we are a newly formed church'
     ]
@@ -48,7 +40,7 @@ export const beliefs = {
             },
             { 
                 solaTitle: 'Sola Gratia',
-                solaContent: 'Our salvation rests sol on the work of God\'s grace for us.'
+                solaContent: 'Our salvation rests solely on the work of God\'s grace for us.'
             },
             { 
                 solaTitle: 'Solus Christus',
@@ -100,7 +92,18 @@ export const beliefs = {
                 text: 'The Scriptural Inerrancy and Biblical Hermeneutics'
             }
         ]
-    }
+    },
+    resources: [
+        { title: 'Ligonier Ministries', url: 'https://www.ligonier.org/' },
+        { title: 'Canon Press', url: 'https://canonpress.com/' },
+        { title: 'G3 Ministries', url: 'https://g3min.org/' },
+        { title: 'Voddie Baucham Ministries', url: 'https://www.voddiebaucham.org/'},
+        { title: 'Reformation Network', url: 'https://refnet.fm/' },
+        { title: 'Blog and Mablog', url: 'https://dougwils.com/' },
+        { title: 'Grace to You', url: 'https://www.gty.org/' },
+        { title: 'One Passion', url: 'https://onepassionministries.org/' },
+        { title: 'Apologia Studios', url: 'https://www.apologiastudios.com/' },
+    ]
 };
 
 export const leadership = {
@@ -119,6 +122,11 @@ export const leadership = {
             image: './resources/blank-person.png'
         },
         {
+            title: 'Worship Leader',
+            name: 'Adam Barker',
+            image: './resources/blank-person.png'
+        },
+        {
             title: 'Deacon, Finances',
             name: 'Chris Baker',
             image: './resources/chris_baker.jpeg'
@@ -128,16 +136,14 @@ export const leadership = {
             name: 'Steve Dunlap',
             image: './resources/blank-person.png'
         },
+        {
+            title: 'Deacon, Facilities',
+            name: 'Jim Dopp',
+            image: './resources/blank-person.png'
+        },
     ]
 };
 
-export const sermons = [
-    {
-        title: 'Raising the Widow\'s Son',
-        imageSource: './resources/luke.png',
-        imageAlt: 'Luke Graphic',
-        scripture: 'Luke 7:18-10',
-        date: 'Sunday, May 2, 2021',
-        sermonHref: 'https://youtube.com'
-    }
-]
+export const whatsNew = {
+    rbcYTPageUrl: 'https://www.youtube.com/channel/UCRUvVoFRRCasFxQHwCH8EsA'
+};

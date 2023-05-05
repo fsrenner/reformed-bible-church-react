@@ -12,7 +12,7 @@ export default function Navigation ({ onShow }) {
             <Navbar.Brand href="/" id="rbcLogo">
                 <img 
                     className="navbar-brand" 
-                    src="./resources/RBC-logo-new-1.png"
+                    src="./resources/Asset%202.svg"
                     id="rbcLogo" 
                     alt=""
                 />
@@ -23,8 +23,8 @@ export default function Navigation ({ onShow }) {
                 <NavLink to="/" className="nav-link" activeClassName="active" exact={true} onClick={() => setExpanded(false)}>Home <span className="sr-only">(current)</span></NavLink>
                 <NavLink to="/beliefs" className="nav-link" activeClassName="active" onClick={() => setExpanded(false)}>Beliefs</NavLink>
                 <NavLink to="/leadership" className="nav-link" activeClassName="active" onClick={() => setExpanded(false)}>Leadership</NavLink>
-                <NavLink to="/sermons" className="nav-link" activeClassName="active" onClick={() => setExpanded(false)}>Sermons</NavLink>
-                <Nav.Link id="openContactModal" data-toggle="modal" data-target="#contactModal" onClick={onShow}>Contact Us</Nav.Link>
+                <NavLink to="/whatsnew" className="nav-link" activeClassName="active" onClick={() => setExpanded(false)}>What's New</NavLink>
+                <NavLink to="/contactus" className="nav-link" activeClassName="active" onClick={() => setExpanded(false)}>Contact Us</NavLink>
                 <Nav.Link href={givingUrl} target="_blank">Give</Nav.Link>
                 {/* <NavLink to="/pagination" className="nav-link" activeClassName="active" onClick={() => setExpanded(false)}>Pagination</NavLink> */}
                 {/* <NavLink to="/login" className="nav-link" activeClassName="active" onClick={() => setExpanded(false)}>Admin</NavLink> */}

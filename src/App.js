@@ -7,7 +7,8 @@ import './index.css';
 import Beliefs from './main/beliefs/Beliefs';
 import Leadership from './main/leadership/Leadership';
 import Home from './main/home/Home';
-import Sermons from './main/sermons/Sermons';
+import WhatsNew from './main/whatsnew/WhatsNew';
+import Contact from './main/contact/Contact';
 // import PaginationTest from './PaginationTest';
 // import Admin from './admin/Admin';
 import Layout from './Layout';
@@ -28,7 +29,8 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route exact path="/leadership" component={Leadership} />
             <Route exact path="/beliefs" component={Beliefs} />
-            <Route exact path="/sermons" component={Sermons} />
+            <Route exact path="/whatsnew" component={WhatsNew} />
+            <Route exact path="/contactus" component={Contact} />
             {/* <Route exact path="/pagination" component={PaginationTest} /> */}
             {/* <Route exact path="/login" component={Login} /> */}
             {/* <Route exact path="/unauthorized" component={Unauthorized} /> */}

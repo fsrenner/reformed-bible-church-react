@@ -1,72 +1,69 @@
 * {
   margin: 0;
-  padding: 0;
-  
+  padding: 0
 }
 
 .comp {
-  background-color: #faf9f8;
+  background-color: #faf9f8
 }
 
 .rbc {
-  height: 85vh;
+  height: 85vh
 }
 
 .tabs {
-  padding-top: 70px;
+  padding-top: 70px
 }
 
-.wwb,
-.sermons {
+.whatsnew,.wwb {
   height: 75vh;
-  background-color: #321a2a;
+  background-color: #321a2a
 }
-  
 
 header .container-fluid {
   padding-left: 0;
-  padding-right: 0;
+  padding-right: 0
 }
 
 #rbcLogo {
-  height: 50px;
+  height: 50px
 }
 
 .dashboard {
-  padding-top: 40px;
+  padding-top: 40px
 }
 
 .rbc .jumbotron {
-  background: url('./resources/reformed.jpg') no-repeat center center; 
-  background-size: cover;
+  background: url('./resources/reformed.jpg') no-repeat 50%;
+  background-size: cover
+}
+
+.rbc .jumbotron,.wwb .jumbotron {
   display: flex;
   height: 100%;
-  overflow: hidden;
+  overflow: hidden
 }
 
 .wwb .jumbotron {
-  background: url('./resources/tulip2.jpg') no-repeat center center; 
-  background-size: 95%;
-  display: flex;
-  height: 100%;
-  overflow: hidden;
+  background: url('./resources/tulip2.jpg') no-repeat 50%;
+  background-size: 95%
 }
 
 .leadership .jumbotron {
   margin-top: 80px;
-  background: url('./resources/torch.jpg') no-repeat center center; 
+  background: url('./resources/torch.jpg') no-repeat 50%;
   background-size: cover;
   display: flex;
   height: 400px;
-  overflow: hidden;
+  overflow: hidden
 }
 
-.sermons .jumbotron {
-  background: url('./resources/faith.jpg') no-repeat center center; 
+.whatsnew .jumbotron {
+  background: url('./resources/faith.jpg') no-repeat 50%;
   background-size: 95%;
   display: flex;
   height: 100%;
-  overflow: hidden;
+  overflow: hidden
 }
 
 .jumbotron .jumbotron-content {
@@ -74,95 +71,93 @@ header .container-fluid {
   align-content: center;
   justify-content: flex-start;
   flex-direction: column;
-  align-self: flex-end;
+  align-self: flex-end
 }
 
 .jumbotron .jumbotron-content h1 {
   font-size: 100px;
-  color: #f8f9fa;
+  color: #f8f9fa
 }
 
 .jumbotron .jumbotron-content p {
   padding-left: 5px;
-  color: #f8f9fa;
+  color: #f8f9fa
 }
 
-.welcome .row,
-.sunday-gatherings .row,
-.what-to-expect .row,
-.mission .row,
-.who-we-are .row,
-.our-beliefs .row,
-.government .row,
-.elders .row {
+.sunday-gatherings {
+  min-height: 75vh
+}
+
+.sunday-evening {
+  margin-top: -10px;
+  padding-top: 0px;
+  font-size: 10px;
+  font-style: italic;
+}
+
+.elders .row,.government .row,.mission .row,.our-beliefs .row,.welcome .row,.what-to-expect .row,.who-we-are .row {
   padding-top: 50px;
-  display: flex;
+  display: flex
+}
+
+.events-row {
+  padding-top: 50px
 }
 
 .login .row {
   padding-top: 40px;
-  min-height: 92vh;
+  min-height: 92vh
 }
 
 .unauthorized .row {
   padding-top: 90px;
-  min-height: 92vh;
+  min-height: 92vh
 }
 
 .unauthorized-button {
-  margin-right: 5px;
+  margin-right: 5px
 }
 
-.welcome .row:last-child,
-.sunday-gatherings .row:last-child,
-.what-to-expect .row:last-child,
-.give .row:last-child {
-  padding-bottom: 50px;
+.give .row:last-child,.sermons .row:last-child,.sunday-gatherings .row:last-child,.welcome .row:last-child,.what-to-expect .row:last-child,.whatsnew .row:last-child {
+  padding-bottom: 50px
 }
 
-.reformed,
-.confessional,
-.covenantal,
-.ordinary,
-.family,
-.elder,
-.deacon {
-  padding-bottom: 10px;
+.confessional,.covenantal,.deacon,.elder,.family,.ordinary,.reformed {
+  padding-bottom: 10px
 }
 
 .give .row {
   padding-top: 80px;
   display: flex;
-  min-height: 90vh;
+  min-height: 90vh
 }
 
 .solas {
-  padding-top: 0!important;
+  padding-top: 0!important
 }
-.solas img,
-.statements img {
-  width: 100%;
+
+.contact img,.solas img,.statements img {
+  width: 100%
 }
 
 .blockquote {
-  margin-left: 50px;
+  margin-left: 50px
 }
 
-.statements,
-.leadership-spacer {
-  margin-bottom: 50px;
+.contact,.leadership-spacer,.statements {
+  margin-bottom: 50px
 }
 
 .statements li {
-  margin-left: 30px;
+  margin-left: 30px
 }
 
 .statements li a {
-  color: #333;
+  color: #333
 }
 
 .leadership-container {
-  padding-bottom: 20px;
+  padding-bottom: 20px
 }
 
 .leadership-image {
@@ -171,35 +166,39 @@ header .container-fluid {
 }
 
 #mapid {
-  height: 400px;
-  width: 100%;
+  height: 60vh;
+  width: 100%
+}
+
+.locationInformation {
+  padding-top: 50px
 }
 
 .locationInformation #serviceTimes {
   z-index: 801;
   background-color: #f8f9fa;
-  opacity: 0.75;
+  opacity: .75
 }
 
 .locationInformation h3 {
   padding-top: 20px;
-  font-weight: bold;
+  font-weight: 700
 }
 
 #mapid hr {
   margin: 0 auto;
   width: 50%;
-  padding-bottom: 20px;
+  padding-bottom: 20px
 }
 
 .locationInformation .street {
   margin-bottom: 0;
-  padding-bottom: 0;
+  padding-bottom: 0
 }
 
-.locationInformation #serviceTimes #bibleStudy {
+.locationInformation #serviceTimes .study {
   padding-bottom: 2px;
-  margin-bottom: 0;
+  margin-bottom: 0
 }
 
 .locationInformation #serviceTimes div {
@@ -207,17 +206,17 @@ header .container-fluid {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: center
 }
 
 .locationInformation #serviceTimes #getDirections {
-  margin: 0 auto;
+  margin: 0 auto
 }
 
 .locationInformation #serviceTimes a {
   text-decoration: none;
   min-width: 150px;
-  padding: 0.5em 1em 0.5em;
+  padding: .5em 1em;
   background-color: #555;
   color: #fff;
   text-align: center;
@@ -227,7 +226,16 @@ header .container-fluid {
   cursor: pointer;
   font-style: normal;
   border-radius: 2em;
-  letter-spacing: .02em;
+  letter-spacing: .02em
+}
+
+.sola {
+  margin-right: 5px
+}
+
+.contactLink {
+  text-decoration: none;
+  color: #333
 }
 
 footer {
@@ -236,12 +244,12 @@ footer {
   background-color: #333;
   min-height: 80px;
   color: #999;
-  z-index: 802;
+  z-index: 802
 }
 
 footer .col-md-2 {
   text-align: center;
-  margin-top: 22.5px;
+  margin-top: 22.5px
 }
 
 footer #openContactModal {
@@ -249,82 +257,76 @@ footer #openContactModal {
   background: none;
   color: #999;
   border: none;
-  padding: 0;
+  padding: 0
 }
 
-footer #openContactModal:hover {
-  color: #999;
+footer #openContactModal:hover,footer a {
+  color: #999
 }
 
 footer a {
-  text-decoration: none;
-  color: #999;
+  text-decoration: none
 }
 
 footer a:hover {
-  color: #999;
+  color: #999
 }
 
-@media screen and (min-width : 576px) and (max-width : 706px) {
-}
-
-@media screen and (min-width : 707px) and (max-width : 924px) {
-
+@media screen and (min-width: 707px) and (max-width:924px) {
   #mapid h3 {
-      padding-top: 20px;
-      font-weight: bold;
-      font-size: 20px;
+      padding-top:20px;
+      font-weight: 700;
+      font-size: 20px
   }
 }
 
-@media screen and (max-width : 812px) {
+@media screen and (max-width: 812px) {
   .jumbotron .jumbotron-content h1 {
-      font-size: 50px;
+      font-size:50px
   }
-  
+
   .jumbotron .jumbotron-content p {
       font-size: 25px;
-      color: #f8f9fa;
+      color: #f8f9fa
   }
 
   #map iframe {
       width: 95%;
-      padding-bottom: 20px;
+      padding-bottom: 20px
   }
 
   .what-to-expect .what-to-expect-list {
-      padding-left: 3px;
+      padding-left: 3px
   }
 }
 
 @media screen and (max-width: 568px) {
   .jumbotron .jumbotron-content h1 {
-      font-size: 25px;
+      font-size:25px
   }
-  
+
   .jumbotron .jumbotron-content p {
       font-size: 12px;
-      color: #f8f9fa;
+      color: #f8f9fa
   }
 
   #map iframe {
       height: 300px;
       width: 95%;
-      padding-bottom: 20px;
+      padding-bottom: 20px
   }
 
   .what-to-expect .what-to-expect-list {
       padding-left: 3px;
-      font-size: 12px;
+      font-size: 12px
   }
 }
 
 #react-paginate ul {
-  display: inline-block;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 15px
 }
 
-#react-paginate li {
-  display: inline-block;
+#react-paginate li,#react-paginate ul {
+  display: inline-block
 }
