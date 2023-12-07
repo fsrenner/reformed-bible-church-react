@@ -13,7 +13,7 @@ export const mapConfig = {
     popupText: 'Best Western Branson Inn and Conference Center, 8514 E State Highway 76 Branson West, Missouri 65737'
 };
 
-export const contactFormUrl = 'http://reformedbible.org/contact.php';
+export const contactFormUrl = 'localhost:8080/contact.php';
 export const apiUrl = 'http://localhost:3002';
 
 export const isEmpty = (obj) => {

@@ -8,6 +8,8 @@ const APPLICATION_JSON = 'application/json'
 
 export default function ContactForm({ onHide }) {
 
+    console.log(config.contactFormUrl);
+
     const [validated, setValidated] = useState();
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
@@ -34,7 +36,7 @@ export default function ContactForm({ onHide }) {
                 phoneNumber,
                 message
             };
-            console.log(body);
+            console.log(JSON.stringify(body, null, 2));
             fetch(config.contactFormUrl, {
                 method: 'post',
                 body: JSON.stringify(body)

@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 
 export default function ContactInfo() {
     return (
-        <section className='container'>
+        <section className='container contact-info'>
             <Row style={{ marginBottom: '20px', marginTop: '20px'}}>
                 <Col>
                     <h2 className="text-center">Contact Information</h2>

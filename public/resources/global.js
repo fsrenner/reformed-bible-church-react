@@ -12,24 +12,31 @@ window.sermon = {
 window.announcements = [
   {
     heading:'Last Sunday Fellowship Potluck Luncheon',
-    title: 'May 28',
+    title: 'July 30',
     details: 'The last Sunday of each month we will not have our regular evening service. Instead, we will have a fellowship meal following our Sunday morning service.',
     date: 'Last Sunday of each month',
     time: '12:30 pm'
   },
   {
-    heading:'Study of the Westminster Confession of Faith',
+    heading:'Fellowship Down by the River',
+    title: 'At the Applegate Farm',
+    details: 'Come and enjoy some time of fun and fellowship on the James River at the Applegate\'s farm in Galena. Bring a potluck item to share for dinner and a swimsuit or a fishing pole and come hang out with the church family',
+    date: 'Friday, July 21',
+    time: '4:00 pm'
+  },
+  {
+    heading:'New Member Class',
     title: '',
-    details: 'Our church\'s confessional statement is the Westminster Confession of faith. It is a systematic outlining of a theological understanding of what the Scriptures teach us about God, Jesus, Man, etc. Join in on learning more about this wonderful confession of faith on Tuesday Nights.',
-    date: 'Tuesdays',
-    time: '6:00 pm'
+    details: 'For those interested in becoming a covenant member of Reformed Bible Church, we will be holding a New Member class on Sunday, July 23 for those interested.',
+    date: 'Sunday, July 23',
+    time: '6:30 pm'
   },
 ];
 
-window.config = {
- contactFormUrl: 'https://reformedbible.org/contact.php'
+// window.config = {
+//  contactFormUrl: 'https://reformedbible.org/contact.php'
 //   contactFormUrl: 'http://localhost:8000/contact.php'
-};
+// };
 
 window.mapConfig = {
 center: (window.innerWidth > 580) ? [36.69, -93.570] : [36.7073328,-93.48],

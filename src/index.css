@@ -148,6 +148,10 @@ header .container-fluid {
   margin-bottom: 50px
 }
 
+.contact-info {
+  height: 77.5vh;
+}
+
 .statements li {
   margin-left: 30px
 }
