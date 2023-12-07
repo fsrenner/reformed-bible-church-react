@@ -2,7 +2,9 @@ import React, { useEffect } from 'react';
 import LeadershipJumbotron from './sections/LeadershipJumbotron';
 import Government from './sections/Government';
 import ChurchLeaders from './sections/ChurchLeaders';
-import { leadership } from '../../util/siteContent';
+// import { leadership } from '../../util/siteContent';
+
+const leadership = window.leadership;
 
 export default function Leadership() {
 
